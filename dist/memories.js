@@ -3,7 +3,8 @@ const enchantedMemories=[
  {id:'sunshine',title:'Güneşim, yanı başımda',note:'O gün deniz parlıyordu. Benim gözüm yine sendeydi.',type:'Birlikte yaşadığımız bir an'},
  {id:'station',title:'Her kalabalıkta seni bulurum',note:'Dünya ne kadar kalabalık olursa olsun, kalbimin yolu sana çıkıyor.',type:'Birlikte yaşadığımız bir an'},
  {id:'saved-kiss',title:'Bu öpücüğü zamana sakladım',note:'Bir fotoğrafın içine sığan, ömrüme yayılan bir sevgi.',type:'Hareketli fotoğraf'},
- {id:'close-hearts',title:'Kalbime en yakın yer',note:'Sana yaslandığımda, bütün dünya biraz daha yumuşak.',type:'Hareketli fotoğraf'}
+ {id:'close-hearts',title:'Kalbime en yakın yer',note:'Sana yaslandığımda, bütün dünya biraz daha yumuşak.',type:'Hareketli fotoğraf'},
+ {id:'new-memory',title:'Yan yana, kendi küçük dünyamızda',note:'Sen bana döndüğünde, bütün kalabalık susuyor; geriye sadece ikimiz kalıyoruz.',type:'Birlikte yaşadığımız bir an'}
 ];
 let memoryObserver=null,memoryMotion=true;
 function memoryInvitation(){return `<a class="memory-invite" href="#magic"><span aria-hidden="true">✦</span><div><h2>Bazı anılar, çerçevelerinde bile kıpır kıpır.</h2><p>Büyülü anı odasına gir; bir öpücük, bir gülüş, biraz biz…</p></div><b>Kapıyı arala ↗</b></a>`}
