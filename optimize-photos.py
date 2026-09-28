@@ -8,6 +8,7 @@ target = root / 'dist' / 'assets' / 'photos'
 target.mkdir(parents=True, exist_ok=True)
 photos = []
 notes = ['En sevdiğim manzara, biz.', 'Bu an burada kalsın.', 'Yan yana olmak güzel.', 'Birlikte biriktirdiklerimiz.', 'Bu kareye bir kalp bıraktım.']
+personal_notes = json.loads((root / 'photo-notes.json').read_text(encoding='utf-8')) if (root / 'photo-notes.json').exists() else {}
 for file in sorted(source.iterdir(), key=lambda p: p.name.lower()):
     if file.suffix.lower() not in ['.jpg', '.jpeg', '.png', '.webp', '.gif']:
         continue
@@ -27,7 +28,7 @@ for file in sorted(source.iterdir(), key=lambda p: p.name.lower()):
         thumb = im.copy()
         thumb.thumbnail((620,620), Image.Resampling.LANCZOS)
         thumb.save(target / f'{ident}-thumb.webp', 'WEBP', quality=80, method=4)
-        photos.append({'src':f'assets/photos/{ident}.webp','thumb':f'assets/photos/{ident}-thumb.webp','width':im.width,'height':im.height,'date':date,'caption':notes[len(photos)%len(notes)]})
+        photos.append({'src':f'assets/photos/{ident}.webp','thumb':f'assets/photos/{ident}-thumb.webp','width':im.width,'height':im.height,'date':date,'caption':personal_notes.get(file.name, notes[len(photos)%len(notes)])})
 photos.sort(key=lambda p: p['date'] or '9999')
 (root / 'photos-manifest.json').write_text(json.dumps(photos, ensure_ascii=False, indent=2), encoding='utf-8')
 print(f'{len(photos)} album photos optimized')
