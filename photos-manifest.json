@@ -1,0 +1,866 @@
+[
+  {
+    "src": "assets/photos/26c05d8caef487.webp",
+    "thumb": "assets/photos/26c05d8caef487-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2023-10-08",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/8c6d14392e56d6.webp",
+    "thumb": "assets/photos/8c6d14392e56d6-thumb.webp",
+    "width": 1500,
+    "height": 2000,
+    "date": "2023-10-08",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/4b209e9ee54b99.webp",
+    "thumb": "assets/photos/4b209e9ee54b99-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "date": "2023-10-08",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/b96df39d519a6f.webp",
+    "thumb": "assets/photos/b96df39d519a6f-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "date": "2023-10-08",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/a4903f71502d08.webp",
+    "thumb": "assets/photos/a4903f71502d08-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "date": "2023-10-08",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/132eb31ed1ce65.webp",
+    "thumb": "assets/photos/132eb31ed1ce65-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "date": "2023-10-08",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/c8ea25bf767b90.webp",
+    "thumb": "assets/photos/c8ea25bf767b90-thumb.webp",
+    "width": 1600,
+    "height": 1204,
+    "date": "2023-10-16",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/d68393f28ed9a4.webp",
+    "thumb": "assets/photos/d68393f28ed9a4-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-10-21",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/0fd4cb8d74aafa.webp",
+    "thumb": "assets/photos/0fd4cb8d74aafa-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-10-21",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/5a29d7e12a40e6.webp",
+    "thumb": "assets/photos/5a29d7e12a40e6-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-10-21",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/a0d7c070b42d5b.webp",
+    "thumb": "assets/photos/a0d7c070b42d5b-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-10-21",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/435f467b340b7f.webp",
+    "thumb": "assets/photos/435f467b340b7f-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-10-21",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/9ccde4452850a3.webp",
+    "thumb": "assets/photos/9ccde4452850a3-thumb.webp",
+    "width": 2000,
+    "height": 1500,
+    "date": "2023-11-03",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/94c35748e7e080.webp",
+    "thumb": "assets/photos/94c35748e7e080-thumb.webp",
+    "width": 4623,
+    "height": 3460,
+    "date": "2023-11-03",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/5773bba9e1e820.webp",
+    "thumb": "assets/photos/5773bba9e1e820-thumb.webp",
+    "width": 3460,
+    "height": 4623,
+    "date": "2023-11-03",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/c861d6ca54bc8a.webp",
+    "thumb": "assets/photos/c861d6ca54bc8a-thumb.webp",
+    "width": 3460,
+    "height": 4623,
+    "date": "2023-11-03",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/71edfeeb7d2013.webp",
+    "thumb": "assets/photos/71edfeeb7d2013-thumb.webp",
+    "width": 3460,
+    "height": 4623,
+    "date": "2023-11-24",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/8bbf4a900b8790.webp",
+    "thumb": "assets/photos/8bbf4a900b8790-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2023-11-29",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/e0013e64c15d73.webp",
+    "thumb": "assets/photos/e0013e64c15d73-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2023-12-17",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/552de0cdde59e8.webp",
+    "thumb": "assets/photos/552de0cdde59e8-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2023-12-31",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/aa8c8c7f24aed4.webp",
+    "thumb": "assets/photos/aa8c8c7f24aed4-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2024-01-26",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/5cb95ce7d69e7d.webp",
+    "thumb": "assets/photos/5cb95ce7d69e7d-thumb.webp",
+    "width": 1440,
+    "height": 1440,
+    "date": "2024-02-03",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/baf1d45ad6c77f.webp",
+    "thumb": "assets/photos/baf1d45ad6c77f-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2024-02-25",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/e99982b7d49555.webp",
+    "thumb": "assets/photos/e99982b7d49555-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-04-10",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/26807984604776.webp",
+    "thumb": "assets/photos/26807984604776-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-04-10",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/b78886b68e1adf.webp",
+    "thumb": "assets/photos/b78886b68e1adf-thumb.webp",
+    "width": 1872,
+    "height": 4160,
+    "date": "2024-04-12",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/b642cf5b2f3380.webp",
+    "thumb": "assets/photos/b642cf5b2f3380-thumb.webp",
+    "width": 1872,
+    "height": 4160,
+    "date": "2024-04-12",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/4f80c5fd828d33.webp",
+    "thumb": "assets/photos/4f80c5fd828d33-thumb.webp",
+    "width": 900,
+    "height": 1600,
+    "date": "2024-05-03",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/688190c8d1ee40.webp",
+    "thumb": "assets/photos/688190c8d1ee40-thumb.webp",
+    "width": 1600,
+    "height": 1200,
+    "date": "2024-05-03",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/f825d4a02b0ef1.webp",
+    "thumb": "assets/photos/f825d4a02b0ef1-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2024-05-03",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/4c2be953ae7bbf.webp",
+    "thumb": "assets/photos/4c2be953ae7bbf-thumb.webp",
+    "width": 1920,
+    "height": 1080,
+    "date": "2024-05-04",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/4e67e282c279cb.webp",
+    "thumb": "assets/photos/4e67e282c279cb-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-05-05",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/cb9acd444cc0a2.webp",
+    "thumb": "assets/photos/cb9acd444cc0a2-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-05-15",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/64b2f302be2e82.webp",
+    "thumb": "assets/photos/64b2f302be2e82-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-05-15",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/e915979fc55247.webp",
+    "thumb": "assets/photos/e915979fc55247-thumb.webp",
+    "width": 4000,
+    "height": 1800,
+    "date": "2024-06-06",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/9195190fc84330.webp",
+    "thumb": "assets/photos/9195190fc84330-thumb.webp",
+    "width": 4000,
+    "height": 1800,
+    "date": "2024-06-06",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/e04cb124cb3768.webp",
+    "thumb": "assets/photos/e04cb124cb3768-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-07-07",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/44031ec54809bb.webp",
+    "thumb": "assets/photos/44031ec54809bb-thumb.webp",
+    "width": 2880,
+    "height": 5120,
+    "date": "2024-07-07",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/6c014e17d24adc.webp",
+    "thumb": "assets/photos/6c014e17d24adc-thumb.webp",
+    "width": 2880,
+    "height": 5120,
+    "date": "2024-07-07",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/fe0ef1353f8a62.webp",
+    "thumb": "assets/photos/fe0ef1353f8a62-thumb.webp",
+    "width": 2880,
+    "height": 5120,
+    "date": "2024-07-09",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/d578586846e976.webp",
+    "thumb": "assets/photos/d578586846e976-thumb.webp",
+    "width": 688,
+    "height": 1416,
+    "date": "2024-07-12",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/4748a9ea5edb4e.webp",
+    "thumb": "assets/photos/4748a9ea5edb4e-thumb.webp",
+    "width": 2592,
+    "height": 4608,
+    "date": "2024-07-13",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/82332393f8bf0b.webp",
+    "thumb": "assets/photos/82332393f8bf0b-thumb.webp",
+    "width": 2592,
+    "height": 4608,
+    "date": "2024-07-13",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/bd80791d181409.webp",
+    "thumb": "assets/photos/bd80791d181409-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-08-08",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/bb506e0a038ec4.webp",
+    "thumb": "assets/photos/bb506e0a038ec4-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2024-08-08",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/c9be036e0d5bcc.webp",
+    "thumb": "assets/photos/c9be036e0d5bcc-thumb.webp",
+    "width": 4899,
+    "height": 3266,
+    "date": "2024-08-09",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/81389f6166cfa9.webp",
+    "thumb": "assets/photos/81389f6166cfa9-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-10",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/973dd850caadf2.webp",
+    "thumb": "assets/photos/973dd850caadf2-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-10",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/d705d90ceb606c.webp",
+    "thumb": "assets/photos/d705d90ceb606c-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-10",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/e79d352790022e.webp",
+    "thumb": "assets/photos/e79d352790022e-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-10",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/b8400cadde30e2.webp",
+    "thumb": "assets/photos/b8400cadde30e2-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-10",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/1423d1ed1ac77a.webp",
+    "thumb": "assets/photos/1423d1ed1ac77a-thumb.webp",
+    "width": 4608,
+    "height": 2592,
+    "date": "2024-08-15",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/2720b950366e79.webp",
+    "thumb": "assets/photos/2720b950366e79-thumb.webp",
+    "width": 1600,
+    "height": 900,
+    "date": "2024-08-18",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/2f25f310c4d003.webp",
+    "thumb": "assets/photos/2f25f310c4d003-thumb.webp",
+    "width": 1600,
+    "height": 1200,
+    "date": "2024-12-15",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/5e9c407640fb2d.webp",
+    "thumb": "assets/photos/5e9c407640fb2d-thumb.webp",
+    "width": 3266,
+    "height": 4898,
+    "date": "2025-01-01",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/c0ca074a5bea76.webp",
+    "thumb": "assets/photos/c0ca074a5bea76-thumb.webp",
+    "width": 3266,
+    "height": 4898,
+    "date": "2025-01-01",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/52a7886b701363.webp",
+    "thumb": "assets/photos/52a7886b701363-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2025-01-01",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/14647edef83364.webp",
+    "thumb": "assets/photos/14647edef83364-thumb.webp",
+    "width": 5120,
+    "height": 2880,
+    "date": "2025-01-01",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/693fbb0237423a.webp",
+    "thumb": "assets/photos/693fbb0237423a-thumb.webp",
+    "width": 900,
+    "height": 1600,
+    "date": "2025-03-16",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/27c0ec3de40755.webp",
+    "thumb": "assets/photos/27c0ec3de40755-thumb.webp",
+    "width": 3520,
+    "height": 1980,
+    "date": "2025-03-30",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/81c3539d2e2e0d.webp",
+    "thumb": "assets/photos/81c3539d2e2e0d-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-01",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/be821fa4dbd4b8.webp",
+    "thumb": "assets/photos/be821fa4dbd4b8-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-02",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/5a18f85ee5b3b4.webp",
+    "thumb": "assets/photos/5a18f85ee5b3b4-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/e35dd7b2963c8a.webp",
+    "thumb": "assets/photos/e35dd7b2963c8a-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/e5b2fc9f305ae5.webp",
+    "thumb": "assets/photos/e5b2fc9f305ae5-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/80eec7f334c3c5.webp",
+    "thumb": "assets/photos/80eec7f334c3c5-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/e465f2ed4d7160.webp",
+    "thumb": "assets/photos/e465f2ed4d7160-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/9b5f386c0474d6.webp",
+    "thumb": "assets/photos/9b5f386c0474d6-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-04-03",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/a2f4a05052b753.webp",
+    "thumb": "assets/photos/a2f4a05052b753-thumb.webp",
+    "width": 4000,
+    "height": 3000,
+    "date": "2025-05-17",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/8a141441d1dd87.webp",
+    "thumb": "assets/photos/8a141441d1dd87-thumb.webp",
+    "width": 4000,
+    "height": 3000,
+    "date": "2025-05-17",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/e5a0f127d59a52.webp",
+    "thumb": "assets/photos/e5a0f127d59a52-thumb.webp",
+    "width": 3000,
+    "height": 4000,
+    "date": "2025-05-17",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/cd9eb4c6f41f69.webp",
+    "thumb": "assets/photos/cd9eb4c6f41f69-thumb.webp",
+    "width": 2304,
+    "height": 5120,
+    "date": "2025-06-24",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/1a4429ebfbb023.webp",
+    "thumb": "assets/photos/1a4429ebfbb023-thumb.webp",
+    "width": 2304,
+    "height": 5120,
+    "date": "2025-06-24",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/43b5328a3a05df.webp",
+    "thumb": "assets/photos/43b5328a3a05df-thumb.webp",
+    "width": 2304,
+    "height": 5120,
+    "date": "2025-06-24",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/3e85f2cd9a9509.webp",
+    "thumb": "assets/photos/3e85f2cd9a9509-thumb.webp",
+    "width": 2304,
+    "height": 5120,
+    "date": "2025-06-24",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/37a54be4746c6a.webp",
+    "thumb": "assets/photos/37a54be4746c6a-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-06-24",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/f14676e1d8a7f4.webp",
+    "thumb": "assets/photos/f14676e1d8a7f4-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-06-24",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/a4e3a608739fa6.webp",
+    "thumb": "assets/photos/a4e3a608739fa6-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-06-24",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/286b60f3c47948.webp",
+    "thumb": "assets/photos/286b60f3c47948-thumb.webp",
+    "width": 3000,
+    "height": 4000,
+    "date": "2025-07-20",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/75aa7046062022.webp",
+    "thumb": "assets/photos/75aa7046062022-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-07-22",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/b953d77aa928b0.webp",
+    "thumb": "assets/photos/b953d77aa928b0-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-07-31",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/ff2e9eec90b99c.webp",
+    "thumb": "assets/photos/ff2e9eec90b99c-thumb.webp",
+    "width": 4480,
+    "height": 2016,
+    "date": "2025-08-18",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/4c11ee7ff587a6.webp",
+    "thumb": "assets/photos/4c11ee7ff587a6-thumb.webp",
+    "width": 1500,
+    "height": 2000,
+    "date": "2025-08-25",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/4cd228a51a6712.webp",
+    "thumb": "assets/photos/4cd228a51a6712-thumb.webp",
+    "width": 2048,
+    "height": 1536,
+    "date": "2025-08-25",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/b84bc2c9519046.webp",
+    "thumb": "assets/photos/b84bc2c9519046-thumb.webp",
+    "width": 1500,
+    "height": 2000,
+    "date": "2025-08-25",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/4a734cdac9e09f.webp",
+    "thumb": "assets/photos/4a734cdac9e09f-thumb.webp",
+    "width": 2160,
+    "height": 2880,
+    "date": "2025-08-25",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/a2d7a841509426.webp",
+    "thumb": "assets/photos/a2d7a841509426-thumb.webp",
+    "width": 1872,
+    "height": 4160,
+    "date": "2025-08-26",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/6d77614bd5ea20.webp",
+    "thumb": "assets/photos/6d77614bd5ea20-thumb.webp",
+    "width": 1872,
+    "height": 4160,
+    "date": "2025-08-26",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/52178f4c22869b.webp",
+    "thumb": "assets/photos/52178f4c22869b-thumb.webp",
+    "width": 4480,
+    "height": 2016,
+    "date": "2025-08-26",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/c7b70564ed2ecb.webp",
+    "thumb": "assets/photos/c7b70564ed2ecb-thumb.webp",
+    "width": 2048,
+    "height": 994,
+    "date": "2025-09-09",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/61ef3018da019d.webp",
+    "thumb": "assets/photos/61ef3018da019d-thumb.webp",
+    "width": 2048,
+    "height": 1152,
+    "date": "2025-09-09",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/31130993dee49a.webp",
+    "thumb": "assets/photos/31130993dee49a-thumb.webp",
+    "width": 1600,
+    "height": 1200,
+    "date": "2025-09-29",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/2bf93383af726b.webp",
+    "thumb": "assets/photos/2bf93383af726b-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-09-29",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/7f2557438d146f.webp",
+    "thumb": "assets/photos/7f2557438d146f-thumb.webp",
+    "width": 1200,
+    "height": 1600,
+    "date": "2025-10-10",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/3e9f0f6e1d7a4d.webp",
+    "thumb": "assets/photos/3e9f0f6e1d7a4d-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-10-10",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/e788875ac8495f.webp",
+    "thumb": "assets/photos/e788875ac8495f-thumb.webp",
+    "width": 6944,
+    "height": 9248,
+    "date": "2025-10-10",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/11a4fd87ac09f1.webp",
+    "thumb": "assets/photos/11a4fd87ac09f1-thumb.webp",
+    "width": 3024,
+    "height": 4032,
+    "date": "2025-10-18",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/db5980d0c01183.webp",
+    "thumb": "assets/photos/db5980d0c01183-thumb.webp",
+    "width": 2000,
+    "height": 1500,
+    "date": "2025-11-23",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/2459420d97acd5.webp",
+    "thumb": "assets/photos/2459420d97acd5-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "date": "2025-12-31",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/4b32cb2f457eda.webp",
+    "thumb": "assets/photos/4b32cb2f457eda-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-12-31",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/46c0d60462820b.webp",
+    "thumb": "assets/photos/46c0d60462820b-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-12-31",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/3d8193afaed9fd.webp",
+    "thumb": "assets/photos/3d8193afaed9fd-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-12-31",
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/dee624f14468bf.webp",
+    "thumb": "assets/photos/dee624f14468bf-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2025-12-31",
+    "caption": "Yan yana olmak güzel."
+  },
+  {
+    "src": "assets/photos/98f5f3d8bd3685.webp",
+    "thumb": "assets/photos/98f5f3d8bd3685-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2026-02-15",
+    "caption": "Birlikte biriktirdiklerimiz."
+  },
+  {
+    "src": "assets/photos/064c5aea5b12b5.webp",
+    "thumb": "assets/photos/064c5aea5b12b5-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2026-02-15",
+    "caption": "Bu kareye bir kalp bıraktım."
+  },
+  {
+    "src": "assets/photos/9c666acbbdf742.webp",
+    "thumb": "assets/photos/9c666acbbdf742-thumb.webp",
+    "width": 5120,
+    "height": 2304,
+    "date": "2026-02-15",
+    "caption": "En sevdiğim manzara, biz."
+  },
+  {
+    "src": "assets/photos/058a8e7e176d2f.webp",
+    "thumb": "assets/photos/058a8e7e176d2f-thumb.webp",
+    "width": 1080,
+    "height": 2400,
+    "date": null,
+    "caption": "Bu an burada kalsın."
+  },
+  {
+    "src": "assets/photos/1be4ce4d7289b8.webp",
+    "thumb": "assets/photos/1be4ce4d7289b8-thumb.webp",
+    "width": 1080,
+    "height": 2400,
+    "date": null,
+    "caption": "Yan yana olmak güzel."
+  }
+]

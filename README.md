@@ -8,6 +8,6 @@ Fotoğraflar `D:/Serpapıma/Footğraflar` klasöründen alınır. Desteklenen bi
 
 Bu sürümde tarih kilidi arayüz düzeyindedir. Gelecek bölüm görselleri eklendiğinde teknik olarak doğrudan dosya adresinden erişilebilir. Sürpriz sayfaların gerçekten gizli tutulması için çizgi roman eklendiğinde sunucu tarafından tarih kontrolü kurulmalıdır.
 
-İsimler ve kişisel anı notları henüz verilmediğinden kullanılmadı. Genel romantik not site taslağına aittir, gerçek bir anı anlatmaz. Albüm boş; uydurma kişisel fotoğraf kullanılmadı.
+İsimler ve kişisel anı notları henüz verilmediğinden kullanılmadı. Genel romantik not site taslağına aittir, gerçek bir anı anlatmaz. Albüm kaynak klasördeki gerçek fotoğrafları kullanır. Kartların notları genel romantik sözlerdir. Tarihler dosya adından veya fotoğrafın EXIF verisinden alınır; mesajlaşma dosyalarının tarihi çekim tarihi olmayabilir. Orijinaller değiştirilmez; albüm için küçük ve büyük WebP kopyaları hazırlanır. Python ve Pillow gerekir.
 
 Yerel önizleme: `python -m http.server 4173 --bind 127.0.0.1 --directory dist`.
