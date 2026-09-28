@@ -11,7 +11,8 @@ const images=dir=>fs.existsSync(dir)?fs.readdirSync(dir).filter(x=>/\.(png|jpe?g
 function copy(file,dir,name){const dest=path.join(root,'dist/assets',dir);fs.mkdirSync(dest,{recursive:true});fs.copyFileSync(file,path.join(dest,name));return `assets/${dir}/${name}`}
 const optimized=spawnSync('python',[path.join(root,'optimize-photos.py')],{encoding:'utf8'});
 if(optimized.status!==0)throw new Error(optimized.stderr||'Fotoğraflar hazırlanamadı.');
-const photos=JSON.parse(fs.readFileSync(path.join(root,'photos-manifest.json'),'utf8'));
+const magicExclusions=JSON.parse(fs.readFileSync(path.join(root,'album-magic-exclusions.json'),'utf8')).photo_sources;
+const photos=JSON.parse(fs.readFileSync(path.join(root,'photos-manifest.json'),'utf8')).filter(p=>!magicExclusions.includes(p.src));
 const files=Array.from({length:15},(_,i)=>images(path.join(comicDir,String(i+1).padStart(2,'0'))));
 if(files[0].length&&!state.startDate){const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Istanbul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());const start=`${today}T00:00:00+03:00`;if(new Date(start)>=new Date(state.finalDate))throw new Error('Başlangıç finalden önce olmalı; schedule.json içindeki finalDate tarihini güncelleyin.');state.startDate=start;}
 const chapters=files.map((list,i)=>({pages:list.map((file,j)=>copy(path.join(comicDir,String(i+1).padStart(2,'0'),file),'comic',`${i+1}-${j+1}${path.extname(file).toLowerCase()}`))}));
