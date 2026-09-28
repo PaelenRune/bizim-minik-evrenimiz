@@ -9,8 +9,11 @@ target.mkdir(parents=True, exist_ok=True)
 photos = []
 notes = ['En sevdiğim manzara, biz.', 'Bu an burada kalsın.', 'Yan yana olmak güzel.', 'Birlikte biriktirdiklerimiz.', 'Bu kareye bir kalp bıraktım.']
 personal_notes = json.loads((root / 'photo-notes.json').read_text(encoding='utf-8')) if (root / 'photo-notes.json').exists() else {}
+excluded = set(json.loads((root / 'album-exclusions.json').read_text(encoding='utf-8'))['excluded_files']) if (root / 'album-exclusions.json').exists() else set()
 for file in sorted(source.iterdir(), key=lambda p: p.name.lower()):
     if file.suffix.lower() not in ['.jpg', '.jpeg', '.png', '.webp', '.gif']:
+        continue
+    if file.name in excluded:
         continue
     with Image.open(file) as original:
         exif = original.getexif()
