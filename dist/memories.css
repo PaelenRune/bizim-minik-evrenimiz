@@ -2,3 +2,5 @@
 .portrait-5 video{aspect-ratio:9/16}.portrait-5{width:100%;max-width:340px;margin:0 auto}
 .portrait-3 video{aspect-ratio:9/16}.portrait-3{width:100%;max-width:340px;margin:0 auto}.portrait-2{grid-row:auto}
 .portrait-wall .portrait-frame video{aspect-ratio:var(--portrait-ratio,16/9)}.portrait-vertical{max-width:340px;width:100%;margin:0 auto}
+
+.living-portrait{content-visibility:auto;contain-intrinsic-size:auto 500px}
