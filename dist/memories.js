@@ -1,27 +1,161 @@
 const enchantedMemories=[
- {id:'kiss',title:'Bir öpücük, bin güzel his',note:'Zaman aksın; ben yine sana böyle yaklaşayım.',type:'Birlikte yaşadığımız bir an'},
- {id:'sunshine',title:'Güneşim, yanı başımda',note:'O gün deniz parlıyordu. Benim gözüm yine sendeydi.',type:'Birlikte yaşadığımız bir an'},
- {id:'station',title:'Her kalabalıkta seni bulurum',note:'Dünya ne kadar kalabalık olursa olsun, kalbimin yolu sana çıkıyor.',type:'Birlikte yaşadığımız bir an'},
- {id:'new-memory',title:'Yan yana, kendi küçük dünyamızda',note:'Sen bana döndüğünde, bütün kalabalık susuyor; geriye sadece ikimiz kalıyoruz.',type:'Birlikte yaşadığımız bir an'},
- {"id": "memory-ec8828af8c", "title": "Benim gözümde sen", "note": "Bir insana bakıp bu kadar çok güzellik görebilmek… Benim için sen tam da böylesin.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-a3c1bcf436", "title": "İlk günlerden bir parça", "note": "Hayatımızın eski bir sayfası; bugün de aynı kalple, sana biraz daha yakın.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-46d228bb93", "title": "Işıkların altında bir anı", "note": "Geçen zamanın içinden bir küçük an seçtim; bizim hikâyemizde yeri hep ayrı.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-11ea8ccc61", "title": "Geceye bıraktığımız gülüş", "note": "O geceden kalbimde kalan şey, seninle aynı anı paylaşmanın mutluluğu.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-98a6cd2cd2", "title": "Seninle yürüdüğüm yollar", "note": "Yolun nereye vardığından çok, senin yanımda olmasını seviyorum.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-8c5161ddf2", "title": "Bir yaz gecesi sakladım", "note": "Küçük bir an, kocaman bir hatıra. Seninle olan günlere dönmek hep güzel.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-ff86d4fdba", "title": "Küçük dünyamız, büyük mutluluğum", "note": "Seninle paylaştığım her sevinç, kalbimde biraz daha büyüyor.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-4f84a3a9b7", "title": "Sıradan günlerin güzel tarafı", "note": "Günlerimin içine karışmanı seviyorum; en küçük anımda bile senden bir iz olsun.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-c61b39f48f", "title": "Senin gözünden ben", "note": "Bana baktığın yerde kendimi biraz daha güzel, biraz daha sevilmiş hissediyorum.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-fd008b68a7", "title": "Gülüşüne ayrılan bir sayfa", "note": "Bir gülüşünü sakladım buraya; özlediğimde dönüp bir kez daha seveyim diye.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-b16a620aa0", "title": "Başını bana yasla", "note": "Dünya biraz yorarsa, gel yine böyle yakın duralım. Benim en sevdiğim yer burası.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-512e66c2de", "title": "Yan yana, kalp kalbe", "note": "Küçücük bir kadrajda, hayatımda kapladığın o kocaman yer var.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-fe9e03ff76", "title": "Gülüşün bana kalsın", "note": "Seni gülerken izlemek, kendime verebildiğim en güzel küçük hediye.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-b15dd8ae71", "title": "Güneşten sıcak bir yakınlık", "note": "O günün ışığı geçip gitti; sana yakın olmanın sıcaklığı bende kaldı.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-6971b70452", "title": "Bir yaz anının içinden", "note": "Zamanın içinden bir yaz günü aldım; seninle biriktirdiğimiz güzelliklere ekledim.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-917d24c224", "title": "Sana yakın, her şey güzel", "note": "Ne zaman sana yaklaşsam, yüzümde aynı tanıdık mutluluk beliriyor.", "type": "Birlikte yaşadığımız bir an", "portrait": true},
- {"id": "memory-f443da8c4d", "title": "Öpücüğün hâlâ burada", "note": "Bu küçücük anı tekrar yaşamak isterdim. Yine sana dönüp, yine seni öpmek.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-1f1aef3e80", "title": "Gülüşün odayı dolduruyor", "note": "Seni böyle gülerken görmek için, hayatın en küçük anlarını bile paylaşmak istiyorum.", "type": "Birlikte yaşadığımız bir an", "portrait": false},
- {"id": "memory-af1c687d49", "title": "Birlikte, en doğal hâlimizle", "note": "Büyük sözlerden önce bu hâlimizi seviyorum: yan yana, rahat, sadece sen ve ben.", "type": "Birlikte yaşadığımız bir an", "portrait": false}
+  {
+    "id": "kiss",
+    "title": "Parmaklarımızdan bir kalp",
+    "note": "Yanağıma yaklaşışın, sonra birlikte yaptığımız kalp… Bu videoda sevgimizin hem öpücüğü hem oyunu var.",
+    "type": "Birlikte yaşadığımız bir an"
+  },
+  {
+    "id": "sunshine",
+    "title": "Denizden parlak gülüşün",
+    "note": "Suyun kıyısında kameraya dönüp gülüyorsun; güneş iki yüzümüze vururken benim yazım tamamlanıyor.",
+    "type": "Birlikte yaşadığımız bir an"
+  },
+  {
+    "id": "station",
+    "title": "Kalabalıkta kameram seni buldu",
+    "note": "Bej montunla bana dönmüşsün; insanların arasından geçtiğin bu kısa anı bir kez daha seyretmek istiyorum.",
+    "type": "Birlikte yaşadığımız bir an"
+  },
+  {
+    "id": "new-memory",
+    "title": "Bir bakış, biraz muhabbet",
+    "note": "Yan yana konuşurken bana dönüyorsun; söylediklerimiz kadar aramızdaki tanıdık bakışı da seviyorum.",
+    "type": "Birlikte yaşadığımız bir an"
+  },
+  {
+    "id": "memory-ec8828af8c",
+    "title": "Seni anlatan küçük güzellikler",
+    "note": "Kutucuklara renkler, çiçekler ve tatlı şeyler sığmış; benim seni anlatmak için yine de daha çok yerim olmalı.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-a3c1bcf436",
+    "title": "Sahneye saklanan bir an",
+    "note": "Siyah perdenin önünde durduğum eski kaydı sana bırakıyorum; hayatımın her sahnesinde bakışını yanımda isterim.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-46d228bb93",
+    "title": "Kırmızı ışığın içinden",
+    "note": "Sahnenin kırmızı ışığında eski bir an duruyor; bugün o günleri sana anlatabiliyor olmak bile güzel.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-11ea8ccc61",
+    "title": "Geceyi birlikte seyretmek",
+    "note": "Sokak lambalarının altında kalabalık bir gece akıyor; böyle gecelerden dönüp en çok seni anlatmak istiyorum.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-98a6cd2cd2",
+    "title": "Ağaçların altındaki yol",
+    "note": "Ağaçların arasında yürüyen adımlar kalmış kamerada; seninle aynı yola çıkmayı, varacağımız yer kadar seviyorum.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-8c5161ddf2",
+    "title": "Işıklı yaz bahçesi",
+    "note": "Sandalyelerin arasına bir yaz gecesi saklanmış; yanında oturup geceyi biraz daha uzatmak isterdim.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-ff86d4fdba",
+    "title": "Bahçede yan yana",
+    "note": "Taş duvarın önünde ikimiz bir aradayız; kameraya sığan bu bahçe benim için seninle büyüyor.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-4f84a3a9b7",
+    "title": "Sana bir selam bıraktım",
+    "note": "Açık havada kameraya dönmüşüm; bu görüntüyü açtığında sana bakıyormuşum gibi gelsin isterim.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-c61b39f48f",
+    "title": "Kırmızı koltukta bir mola",
+    "note": "Koltukta yana dönüp durmuşum; birlikte geçtiğimiz yolun en güzel kısmı, yanı başındaki yerim.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-fd008b68a7",
+    "title": "Bahçedeki gülüşün",
+    "note": "Ağacın altında kameraya gülüyorsun; o açık hava, o küçük masa, hepsi senin neşenle hatıra olmuş.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-b16a620aa0",
+    "title": "Başın hemen yanı başımda",
+    "note": "Başını bana yaklaştırmışsın, arkamızda yeşillik var; günün içinde kendimize küçücük bir yakınlık ayırmışız.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-512e66c2de",
+    "title": "Kısacık bir gülüş molası",
+    "note": "Açık havada yüzlerimizi birleştirmişiz; üç saniyelik kayıt bile seni ne kadar sevdiğimi hatırlatabiliyor.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-fe9e03ff76",
+    "title": "Kameraya beraber takılmak",
+    "note": "Kameraya yaklaşıp komik yüzler yapıyoruz; yanında hem âşık hem çocuk gibi neşeli olmayı seviyorum.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-b15dd8ae71",
+    "title": "Güneşte yanağıma yaklaşırken",
+    "note": "Denizin kıyısında yüzünü bana eğmişsin; o sıcacık yaklaşmanı bir yaz hatırası diye sakladım.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-6971b70452",
+    "title": "Göğe dönen kamera",
+    "note": "Kamera yaz göğüne dönüyor; seni düşününce bu maviliğin içinde bile birlikte geçirdiğimiz günü görüyorum.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-917d24c224",
+    "title": "Gölgedeki küçük sohbetimiz",
+    "note": "Ahşap tavanın altında bana yakın duruyorsun; yüzlerimizin arasındaki bu rahatlığı her yerde bulamıyorum.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": true
+  },
+  {
+    "id": "memory-f443da8c4d",
+    "title": "Bir öpücüğün yazı",
+    "note": "Elini yüzüme koyup beni öpüyorsun; arkadaki gökyüzü kadar açık bir mutluluk var o saniyede.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-1f1aef3e80",
+    "title": "Masadaki kahkahan",
+    "note": "Masada otururken gülmeye başlamışsın; yüzündeki o neşe, bu videonun bana en güzel hediyesi.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  },
+  {
+    "id": "memory-af1c687d49",
+    "title": "Yanıma sokulduğun an",
+    "note": "Atkınla bana yaklaşmışsın, birlikte gülüşüyoruz; soğuk bir günü hatırlarken bende kalan bu sıcaklık.",
+    "type": "Birlikte yaşadığımız bir an",
+    "portrait": false
+  }
 ];
 let memoryObserver=null,memoryMotion=true;const visibleMemories=new Set();
 function hydrateMemory(v){if(!v.dataset.loaded){v.poster=v.dataset.poster;v.src=v.dataset.src;v.dataset.loaded='yes'} }
