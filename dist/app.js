@@ -1,3 +1,4 @@
+function preloadDiaryNext(){if(location.hash!=='#album')return;const p=C.photos[diaryIndex+1];if(p){const next=new Image();next.decoding='async';next.src=p.src}}
 const C=window.CONTENT,main=document.querySelector('main'),modal=document.querySelector('dialog');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=d=>new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'long',timeZone:'Europe/Istanbul'}).format(new Date(d));
