@@ -285,6 +285,7 @@
         <button class="admin-tab-btn" data-tab="chapters">📖 Çizgi Roman (15)</button>
         <button class="admin-tab-btn" data-tab="stickers">🎁 Sticker & Hediyeler</button>
         <button class="admin-tab-btn" data-tab="photos">📸 Fotoğraf Arşivi (73)</button>
+        <button class="admin-tab-btn" data-tab="news">📢 Duyurular</button>
         <button class="admin-tab-btn" data-tab="security">🔐 Şifre & Güvenlik</button>
       </div>
       <div class="admin-dash-body" id="admin-dash-content">
@@ -325,6 +326,7 @@
     else if (tab === 'chapters') renderChaptersTab(container);
     else if (tab === 'stickers') renderStickersTab(container);
     else if (tab === 'photos') renderPhotosTab(container);
+    else if (tab === 'news') renderNewsTab(container);
     else if (tab === 'security') renderSecurityTab(container);
   }
 
@@ -659,6 +661,105 @@
     container.querySelector('#admin-tab-logout-btn').addEventListener('click', () => {
       logoutAdmin();
     });
+  }
+
+  // --- Tab: Duyurular Yönetimi ---
+  function renderNewsTab(container) {
+    const list = window.ANNOUNCEMENTS || [];
+    container.innerHTML = `
+      <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap: 24px;">
+        <div>
+          <h3 style="color:var(--admin-gold); margin-top:0">📢 Yayınlanan Duyurular (${list.length})</h3>
+          <p style="color:var(--admin-muted); font-size:13px; margin-bottom:15px;">Sitenin "Evrenden Havadisler" panosunda şu anda görünen yenilikler.</p>
+          <div style="display:flex; flex-direction:column; gap:12px; max-height:480px; overflow-y:auto; padding-right:6px;">
+            ${list.map(n => `
+              <div style="background:var(--admin-card); border:1px solid var(--admin-border); border-radius:12px; padding:14px;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                  <span style="font-size:11px; font-weight:bold; color:var(--admin-accent)">${esc(n.tagLabel || 'Duyuru')}</span>
+                  <small style="color:var(--admin-muted)">${esc(n.date)}</small>
+                </div>
+                <strong style="color:white; font-size:15px; display:block; margin-bottom:6px;">${esc(n.title)}</strong>
+                <p style="color:var(--admin-muted); font-size:12px; margin:0; line-height:1.4;">${esc(n.content)}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div>
+          <div style="background:var(--admin-card); border:1px solid var(--admin-border); border-radius:16px; padding:20px;">
+            <h3 style="color:white; margin-top:0; font-size:17px">✨ Yeni Duyuru Yayınla</h3>
+            <p style="color:var(--admin-muted); font-size:13px; margin-bottom:15px;">Buradan eklediğin duyuru hemen sitedeki havadisler panosuna eklenir.</p>
+            <form id="admin-add-news-form">
+              <div style="margin-bottom:10px;">
+                <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Başlık</label>
+                <input type="text" id="new-news-title" class="admin-input" placeholder="Örn: 2. Bölüm Yayında!" required style="text-align:left; font-size:13px; padding:8px 12px;">
+              </div>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:10px;">
+                <div>
+                  <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Kategori / Etiket</label>
+                  <select id="new-news-tag" class="admin-input" style="text-align:left; font-size:13px; padding:8px 12px;">
+                    <option value="update">✨ Yenilik</option>
+                    <option value="video">🎬 Canlı Video</option>
+                    <option value="story">📖 Çizgi Roman</option>
+                    <option value="gift">🎁 Sürpriz Hediye</option>
+                    <option value="custom">🌸 Özel Not</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Tarih</label>
+                  <input type="text" id="new-news-date" class="admin-input" value="${new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}" style="text-align:left; font-size:13px; padding:8px 12px;">
+                </div>
+              </div>
+              <div style="margin-bottom:10px;">
+                <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Duyuru Metni</label>
+                <textarea id="new-news-content" class="admin-input" rows="4" placeholder="Neler olduğunu ve sürprizi anlat..." required style="text-align:left; font-size:13px; padding:8px 12px; resize:vertical;"></textarea>
+              </div>
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:15px;">
+                <div>
+                  <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Bağlantı Sayfası</label>
+                  <select id="new-news-link" class="admin-input" style="text-align:left; font-size:13px; padding:8px 12px;">
+                    <option value="">Yok</option>
+                    <option value="#home">Ana Sayfa</option>
+                    <option value="#story">Çizgi Roman</option>
+                    <option value="#album">Anı Albümü</option>
+                    <option value="#magic">Büyülü Videolar</option>
+                    <option value="#stickers">Sticker Köşesi</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="display:block; font-size:12px; color:var(--admin-muted); margin-bottom:4px;">Buton Yazısı</label>
+                  <input type="text" id="new-news-linktext" class="admin-input" placeholder="Örn: Keşfet ↗" style="text-align:left; font-size:13px; padding:8px 12px;">
+                </div>
+              </div>
+              <button type="submit" class="admin-btn active" style="width:100%; padding:10px; font-weight:600;">Panoya Ekle & Yayınla 📢</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    `;
+
+    const form = container.querySelector('#admin-add-news-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const tagSelect = container.querySelector('#new-news-tag');
+        const tagText = tagSelect.options[tagSelect.selectedIndex].text;
+        if (typeof window.addCustomAnnouncement === 'function') {
+          window.addCustomAnnouncement({
+            title: container.querySelector('#new-news-title').value.trim(),
+            date: container.querySelector('#new-news-date').value.trim(),
+            tag: tagSelect.value,
+            tagLabel: tagText,
+            content: container.querySelector('#new-news-content').value.trim(),
+            link: container.querySelector('#new-news-link').value,
+            linkText: container.querySelector('#new-news-linktext').value.trim() || 'Keşfet ↗',
+            featured: true
+          });
+          showAdminToast('Yeni duyuru Evrenden Havadisler panosuna eklendi! 📢');
+          renderNewsTab(container);
+        }
+      });
+    }
   }
 
   // Auto-mount if already logged in
