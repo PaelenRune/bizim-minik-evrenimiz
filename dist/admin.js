@@ -24,7 +24,7 @@
 
   function isAuth() {
     try {
-      return sessionStorage.getItem(AUTH_KEY) === 'true';
+      return localStorage.getItem(AUTH_KEY) === 'true' || sessionStorage.getItem(AUTH_KEY) === 'true';
     } catch {
       return false;
     }
@@ -32,16 +32,22 @@
 
   function setAuth(val) {
     try {
-      if (val) sessionStorage.setItem(AUTH_KEY, 'true');
-      else sessionStorage.removeItem(AUTH_KEY);
+      if (val) {
+        localStorage.setItem(AUTH_KEY, 'true');
+        sessionStorage.setItem(AUTH_KEY, 'true');
+      } else {
+        localStorage.removeItem(AUTH_KEY);
+        sessionStorage.removeItem(AUTH_KEY);
+      }
     } catch {}
   }
 
   function isGodMode() {
     try {
-      return localStorage.getItem(GOD_KEY) === 'true';
+      const val = localStorage.getItem(GOD_KEY);
+      return val !== 'false';
     } catch {
-      return false;
+      return true;
     }
   }
 
@@ -72,6 +78,11 @@
   let brandClickTimer = null;
 
   document.addEventListener('click', (e) => {
+    if (e.target.closest('#admin-footer-btn')) {
+      e.preventDefault();
+      triggerAdmin();
+      return;
+    }
     const brand = e.target.closest('.brand');
     if (brand) {
       brandClickCount++;
@@ -105,6 +116,23 @@
     }
   }
 
+  function updateFooterBtn() {
+    const btn = document.querySelector('#admin-footer-btn');
+    if (btn) {
+      if (window.ADMIN_AUTHENTICATED) {
+        btn.innerHTML = '👑 Yönetici (Kilitler Açık)';
+        btn.style.color = '#7e5caa';
+        btn.style.borderColor = '#7e5caa';
+        btn.style.background = '#f5eef7';
+      } else {
+        btn.innerHTML = '🔐 Yönetici Girişi';
+        btn.style.color = '#a891ae';
+        btn.style.borderColor = '#d6bfd7';
+        btn.style.background = 'rgba(255,255,255,0.6)';
+      }
+    }
+  }
+
   // 2. Login Modal
   function createLoginModal() {
     if (loginModal) return loginModal;
@@ -112,17 +140,20 @@
     loginModal.id = 'admin-login-dialog';
     loginModal.innerHTML = `
       <div class="admin-login-box">
-        <span class="icon">✨</span>
-        <h2>Yönetici Girişi</h2>
-        <p>Gizli içeriklere ve evrenin kontrollerine erişmek için şifreni gir.</p>
+        <span class="icon">👑</span>
+        <h2>Yönetici Doğrulama</h2>
+        <p>Admin şifreni girerek doğrulama yap; sitedeki tüm gizli bölümler, canlı videolar ve kilitli sayfalar senin için anında açılsın.</p>
         <form id="admin-login-form">
           <div class="admin-input-group">
-            <input type="password" id="admin-pin-input" class="admin-input" placeholder="Şifre / PIN" autofocus autocomplete="current-password">
+            <input type="password" id="admin-pin-input" class="admin-input" placeholder="Yönetici Şifren" autofocus autocomplete="current-password">
             <div id="admin-login-msg" class="admin-login-error"></div>
+          </div>
+          <div style="font-size:12px; color:var(--admin-muted); margin-bottom:18px;">
+            Varsayılan şifre: <code style="color:var(--admin-gold); font-size:13px;">evren2026</code> (Giriş yaptıktan sonra değiştirebilirsin).
           </div>
           <div style="display:flex; gap:10px; justify-content:center;">
             <button type="button" class="admin-btn" id="admin-login-cancel">Vazgeç</button>
-            <button type="submit" class="admin-btn active" style="padding:8px 24px;">Giriş Yap ➜</button>
+            <button type="submit" class="admin-btn active" style="padding:10px 24px; font-weight:600;">Doğrula ve Kilitleri Aç 🔓</button>
           </div>
         </form>
       </div>
@@ -166,24 +197,28 @@
 
   function onLoginSuccess() {
     setAuth(true);
+    setGodMode(true);
     window.ADMIN_AUTHENTICATED = true;
-    window.ADMIN_UNLOCKED = isGodMode();
+    window.ADMIN_UNLOCKED = true;
     mountAdminUI();
-    openAdminDashboard();
-    showAdminToast('Yönetici girişi başarılı! ♡');
+    updateFooterBtn();
     refreshSiteState();
+    showAdminToast('Yönetici doğrulandı! Bütün gizli anılar ve içerikler senin için açıldı 🔓✨');
+    openAdminDashboard();
   }
 
   function logoutAdmin() {
     setAuth(false);
+    setGodMode(false);
     window.ADMIN_AUTHENTICATED = false;
     window.ADMIN_UNLOCKED = false;
     window.SIMULATED_DATE = null;
     window.SIMULATED_START_DATE = null;
-    if (adminBar) adminBar.remove();
-    if (adminFab) adminFab.remove();
+    if (adminBar) { adminBar.remove(); adminBar = null; }
+    if (adminFab) { adminFab.remove(); adminFab = null; }
     if (dashboardModal && dashboardModal.open) dashboardModal.close();
     if (location.hash === '#admin') location.hash = '#home';
+    updateFooterBtn();
     refreshSiteState();
     showAdminToast('Yönetici oturumu kapatıldı.');
   }
@@ -765,5 +800,10 @@
   // Auto-mount if already logged in
   if (window.ADMIN_AUTHENTICATED) {
     mountAdminUI();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateFooterBtn);
+  } else {
+    setTimeout(updateFooterBtn, 50);
   }
 })();
