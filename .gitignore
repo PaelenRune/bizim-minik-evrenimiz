@@ -1,2 +1,3 @@
 .sites-runtime/
+.pages-site/
 *.tar.gz
