@@ -2,74 +2,7 @@
 (function() {
   const STORAGE_KEY = 'minik_evren_custom_news';
 
-  const DEFAULT_ANNOUNCEMENTS = [
-    {
-      id: 'news-video-room',
-      title: 'Büyülü Video Odası Canlandı!',
-      date: '1 Ekim 2026',
-      tag: 'video',
-      tagLabel: '🎬 Canlı Videolar',
-      featured: true,
-      content: 'Aramızdaki en kıymetli anlar artık sadece donuk fotoğraflarda kalmıyor. Birlikte güldüğümüz, konuştuğumuz ve sarıldığımız 23 özel canlı video kaydı, Büyülü Anılar köşesinde ses ve kahkahalarımızla canlanmaya başladı.',
-      link: '#magic',
-      linkText: 'Büyülü Anılara Git ↗'
-    },
-    {
-      id: 'news-admin-panel',
-      title: 'Özel Yönetici Masası Entegre Edildi',
-      date: '1 Ekim 2026',
-      tag: 'update',
-      tagLabel: '✨ Yeni Özellik',
-      featured: false,
-      content: 'Evrenin arka planını yönetmek, henüz tarihi gelmemiş gizli bölümleri ve videoları önceden test edebilmek için şifreli Yönetici Paneli eklendi.',
-      link: '#admin',
-      linkText: 'Yönetici Girişi ↗'
-    },
-    {
-      id: 'news-story-calendar',
-      title: 'On Beş Bölümlük Hikâyemiz Hazırlandı',
-      date: '30 Eylül 2026',
-      tag: 'story',
-      tagLabel: '📖 Çizgi Roman',
-      featured: false,
-      content: 'Sen ve beni başrole koyan on beş bölümlük çizgi roman yolculuğumuz kurgulandı. Her yeni bölüm kendi gününde sabırsızlıkla açılmayı bekliyor.',
-      link: '#story',
-      linkText: 'Bölümlere Göz At ↗'
-    },
-    {
-      id: 'news-photo-diary',
-      title: 'İlk Günden Bugüne: 73 Fotoğraflık Günlük',
-      date: '28 Eylül 2026',
-      tag: 'update',
-      tagLabel: '📸 Anı Günlüğü',
-      featured: false,
-      content: '8 Ekim 2023’teki ilk karemizden başlayarak biriktirdiğimiz 73 anı fotoğrafı, her biri için özenle seçilmiş notlarla günlüğümüze yerleştirildi.',
-      link: '#album',
-      linkText: 'Anı Günlüğüne Dal ♡'
-    },
-    {
-      id: 'news-sticker-gift',
-      title: '7. Bölümün Ardına Saklanan Sürpriz: Sticker Paketi',
-      date: 'Yakında',
-      tag: 'gift',
-      tagLabel: '🎁 Sürpriz Hediye',
-      featured: false,
-      content: 'Çizgi romanın 7. bölümünde açılacak sihirli hediye kutusunda, WhatsApp sohbetlerimizi renklendirecek 20 adet özel chibi sticker paketi bekliyor.',
-      link: '#story',
-      linkText: 'Hikâyemize Git ↗'
-    },
-    {
-      id: 'news-grand-finale',
-      title: '3 Kasım 2026: Büyük Final Günü',
-      date: '3 Kasım 2026',
-      tag: 'story',
-      tagLabel: '🌸 Büyük Final',
-      featured: false,
-      content: 'Bütün yolların, bölümlerin ve sürprizlerin birleştiği o özel tarih. Hikâyemizin en güzel sayfası sona saklandı.',
-      link: '#home',
-      linkText: 'Evrenimize Dön ♡'
-    }
-  ];
+  const DEFAULT_ANNOUNCEMENTS = [];
 
   function getCustomNews() {
     try {
@@ -132,16 +65,17 @@
           <p>Minik evrenimizde neler değişti, hangi sürprizler eklendi ve bizi neler bekliyor?<br>Bütün yenilikler ve duyurular bu panoda toplanıyor.</p>
         </div>
 
+        ${list.length ? `
         <div class="news-filters" role="tablist" aria-label="Duyuru filtreleri">
           <button class="news-filter-btn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">Tümü (${list.length})</button>
           <button class="news-filter-btn ${activeFilter === 'update' ? 'active' : ''}" data-filter="update">✨ Yenilikler</button>
           <button class="news-filter-btn ${activeFilter === 'video' ? 'active' : ''}" data-filter="video">🎬 Videolar</button>
           <button class="news-filter-btn ${activeFilter === 'story' ? 'active' : ''}" data-filter="story">📖 Çizgi Roman</button>
           <button class="news-filter-btn ${activeFilter === 'gift' ? 'active' : ''}" data-filter="gift">🎁 Sürprizler</button>
-        </div>
+        </div>` : ''}
 
         <div class="news-feed" aria-live="polite">
-          ${filtered.length ? filtered.map(item => `
+          ${list.length ? (filtered.length ? filtered.map(item => `
             <article class="news-card ${item.featured ? 'featured' : ''}">
               <div class="news-meta">
                 <span class="news-tag ${item.tag}">${esc(item.tagLabel || 'Duyuru')}</span>
@@ -162,6 +96,11 @@
             <div class="empty-album" style="padding:40px 20px;">
               <h2>Bu kategoride henüz bir duyuru yok</h2>
               <p>Yakında yepyeni sürprizler eklenecek! ♡</p>
+            </div>
+          `) : `
+            <div class="empty-album" style="padding:60px 20px;">
+              <h2>Henüz bir duyuru yok ♡</h2>
+              <p>Evrenimizdeki yeni sürprizler ve havadisler burada paylaşılacak.</p>
             </div>
           `}
         </div>
