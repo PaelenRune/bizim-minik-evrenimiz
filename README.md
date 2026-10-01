@@ -1,4 +1,12 @@
-# Bizim Minik Evrenimiz
+# Bizim Minik Evrenimiz 🌼
+
+Anılarımızı bir günlüğün sayfalarında sakladığımız, videolarımızla büyülü anlara döndüğümüz ve 15 bölümlük çizgi romanımızı birlikte okuyacağımız küçük evrenimiz.
+
+**Siteyi aç:** [Bizim Minik Evrenimiz](https://bizim-minik-evrenimiz.kocpolat085.chatgpt.site/)
+
+Papatyalar, minik sürprizler ve sadece bize ait anılarla dolu bir hediye. Çizgi romanın final bölümü 3 Kasım 2026'da açılacak.
+
+## İçerik ve yayın notları
 
 Fotoğraflar `D:/Serpapıma/Footğraflar` klasöründen alınır. Desteklenen biçimler JPG, PNG, WebP ve GIF.
 
