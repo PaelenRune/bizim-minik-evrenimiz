@@ -12,19 +12,19 @@
   window.albumGiftAvailable = function() {
     if (window.ADMIN_UNLOCKED) return true;
     const s = window.SIMULATED_START_DATE || (window.CONTENT && window.CONTENT.startDate);
-    return Boolean(s && unlocked(0) && ((window.CONTENT && window.CONTENT.chapters[0]?.pages?.length) || window.ADMIN_UNLOCKED));
+    return Boolean(s && unlocked(0));
   };
 
   window.stickerGiftAvailable = function() {
     if (window.ADMIN_UNLOCKED) return true;
     const s = window.SIMULATED_START_DATE || (window.CONTENT && window.CONTENT.startDate);
-    return Boolean(s && unlocked(6) && ((window.CONTENT && window.CONTENT.chapters[6]?.pages?.length) || window.ADMIN_UNLOCKED));
+    return Boolean(s && unlocked(6));
   };
 
   window.magicGiftAvailable = function() {
     if (window.ADMIN_UNLOCKED) return true;
     const s = window.SIMULATED_START_DATE || (window.CONTENT && window.CONTENT.startDate);
-    return Boolean(s && unlocked(8) && ((window.CONTENT && window.CONTENT.chapters[8]?.pages?.length) || window.ADMIN_UNLOCKED));
+    return Boolean(s && unlocked(8));
   };
 
   function isOpened(key) {
@@ -40,6 +40,13 @@
       localStorage.setItem(key, 'yes');
     } catch {}
   }
+
+  window.isAlbumGiftOpened = () => isOpened(ALBUM_STORAGE_KEY);
+  window.isStickerGiftOpened = () => isOpened(STICKER_STORAGE_KEY);
+  window.isMagicGiftOpened = () => isOpened(MAGIC_STORAGE_KEY);
+  window.openAlbumGiftModal = () => show(albumGiftBox());
+  window.openStickerGiftModal = () => show(stickerGiftBox());
+  window.openMagicGiftModal = () => show(magicGiftBox());
 
   // 2. Gift Box Dialog Creators
   function albumGiftBox() {
@@ -156,13 +163,13 @@
   // 4. Sync Nav Items
   window.syncAllGifts = function() {
     const albumNav = document.querySelector('[data-page="album"]');
-    if (albumNav) albumNav.hidden = !albumGiftAvailable();
+    if (albumNav) albumNav.hidden = !albumGiftAvailable() || (!isOpened(ALBUM_STORAGE_KEY) && !window.ADMIN_UNLOCKED);
 
     const stickerNav = document.querySelector('[data-page="stickers"]');
-    if (stickerNav) stickerNav.hidden = !stickerGiftAvailable();
+    if (stickerNav) stickerNav.hidden = !stickerGiftAvailable() || (!isOpened(STICKER_STORAGE_KEY) && !window.ADMIN_UNLOCKED);
 
     const magicNav = document.querySelector('[data-page="magic"]');
-    if (magicNav) magicNav.hidden = !magicGiftAvailable();
+    if (magicNav) magicNav.hidden = !magicGiftAvailable() || (!isOpened(MAGIC_STORAGE_KEY) && !window.ADMIN_UNLOCKED);
 
     if (location.hash === '#story' && !modal.open) {
       if (albumGiftAvailable() && !isOpened(ALBUM_STORAGE_KEY) && !albumGiftShown) {
